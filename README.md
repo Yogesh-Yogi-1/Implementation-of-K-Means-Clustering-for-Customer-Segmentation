@@ -58,11 +58,16 @@ q = data[data['cluster'] == 2]
 r = data[data['cluster'] == 3]
 s = data[data['cluster'] == 4]
 
-plt.scatter(o['Annual Income (k$)'], o['Spending Score (1-100)'], c="red", label="cluster0")
-plt.scatter(p['Annual Income (k$)'], p['Spending Score (1-100)'], c="blue", label="cluster1")
-plt.scatter(q['Annual Income (k$)'], q['Spending Score (1-100)'], c="green", label="cluster2")
-plt.scatter(r['Annual Income (k$)'], r['Spending Score (1-100)'], c="orange", label="cluster3")
-plt.scatter(s['Annual Income (k$)'], s['Spending Score (1-100)'], c="magenta", label="cluster4")
+plt.scatter(o['Annual Income (k$)'], o['Spending Score (1-100)'], c="red",
+         label="cluster0")
+plt.scatter(p['Annual Income (k$)'], p['Spending Score (1-100)'], c="blue",
+         label="cluster1")
+plt.scatter(q['Annual Income (k$)'], q['Spending Score (1-100)'], c="green",
+             label="cluster2")
+plt.scatter(r['Annual Income (k$)'], r['Spending Score (1-100)'], c="orange",
+             label="cluster3")
+plt.scatter(s['Annual Income (k$)'], s['Spending Score (1-100)'], c="magenta",
+             label="cluster4")
 plt.xlabel("Annual Income (k$)")
 plt.ylabel("Spending Score (1-100)")
 plt.legend()
